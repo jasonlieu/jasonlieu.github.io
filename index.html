@@ -1,3 +1,4 @@
+<pre>
 // Note frequency values
 <br> int R = 0;
 <br> int nB0 = 31;
@@ -90,27 +91,23 @@
 <br> int nD8 = 4699;
 <br> int nDS8 = 4978;
 
-<br> //note values
+<br> //Note length values
 <br> int W = 1;  //whole
 <br> int H = 2;  //half
 <br> int Q = 4;  //quarter
 <br> int E = 8;  //eighth
 
-<br> int tempo = 250;  //speed
-<br> int pause = 250;  //pause between notes
-<br>
-<br>
+
 <br> //EDIT HERE
 <br> int notes[] = {nF5, R, nA5, nC6, R, nA5, R, nF5, nD5, nD5, nD5};
 <br> int beat[] =  {Q, Q, Q, Q, Q, Q, Q, Q, E, E, E};
-<br>
-<br>
+
+
+<br> int tempo = 250;  //speed
+<br> int pause = 250;  //pause between notes
 <br> int outPin = 3;
-
-
 <br> void setup() {
 <br> }
-
 <br> void loop() {
 <br>   for(int i = 0; i < sizeof(notes)/sizeof(notes[0]); i++){
 <br>    if(notes[i] != 0){
@@ -125,3 +122,4 @@
 <br>   tone(outPin, note);
 <br>   delay(tempo/duration);
 <br> }
+</pre>
